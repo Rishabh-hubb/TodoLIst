@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+}
+
+h1{
+    margin: 1rem 0;
+    color: gray;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.container{
+    width: 50%;
+    margin: 1rem auto;
+    background-color: white;
+}
+.form-section{
+    margin:1rem;
+}
+.box{
+    padding: 0.4rem 0;
+    width: 100%;
+    border-top:1px solid rgba(128,128,129,0.3);
+    border-bottom:1px solid rgba(128,128,129,0.3);
+    
+}
+p{
+    text-align: left;
+    color:gray;
+    font-weight: bolder;
+    font-size:1.2rem;
+}
+.box input{
+    display: block;
+    border:none;
+    width:100%;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+input:focus{
+    outline:none;
+}
+
+input::placeholder{
+    opacity: 0.4;
+}
+.box1{
+    width: 100%;
+    display: flex;
+    height:4rem;
+    border-bottom: 1px solid rgba(128,128,129,0.3);
+    
+}
+.category{
+    width: 50%;
+    border-right: 1px solid rgba(129,128,128,0.4);
+}
+.date-input{
+    margin-left:1rem;
+}
+select{
+    float: left;
+    border: none;
+    width: 90%;
+    font-weight: 600;
+    color: gray;
+}
+select:focus{
+    outline: none;
+}
+
+input[type='date']{
+    border:none;
+    
+}
+
+
+.buttons{
+    width: 100%;
+    height:100px;
+    border-bottom: 1px solid  rgba(129,128,128,0.4);
+    margin-bottom: 1rem;
+}
+.add-tasks,.delete-tasks{
+    padding:1rem 1rem;
+    margin:1rem 0.5rem;
+    color: white;
+    border:none;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.add-tasks{
+    background-color: rgba(0,0,0,0.6);
+}
+.delete-tasks{
+    background-color: rgba(255,0,0,0.7);
+}
+.fa-plus{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+ 
+
+/*  Task Display Section */
+.task-section{
+    padding-bottom: 1rem;
+}
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 1.5rem;
+    padding:1rem 0;
+    border-bottom: 1px solid rgba(128,128,129,0.3);
+}
+.task-container-section1{
+    display: flex;
+    justify-content: flex-start;
+}
+.checkbox{
+    width:50px;
+}
+
+.task-name,.task-date{
+    font-size:1rem;
+}
+
+.fa-calendar-days{
+    margin-top:0.5rem;
+}
+
+.task-container-section2{
+    background-color: rgba(255,0,0,0.7);
+    padding:1rem 1.5rem;
+
+}
+
+.task-type{
+    color:white;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/*  Color for different task Category. */
+.personal{
+    background-color: black;
+}
+
+.work{
+    background-color: rgba(0,100,255,0.6);
+}
+.shopping{
+    background-color: rgba(200,100,255,0.6);
+}
+.others{
+    background-color: rgba(0,25,255);
+}
+
+
+
+/* Media Query for smaller Devices. */
+@media screen and (max-width:768px) {
+    .task-container p{
+        font-size: 12px;
+    }
+    .container{
+        width: 95%;
+    }
+    
+}
